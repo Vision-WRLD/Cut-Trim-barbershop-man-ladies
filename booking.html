@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment | Cut & Trim Barbershop</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header"><nav class="nav container"><a class="logo" href="index.html"><span>Cut & Trim</span><small>Men & Ladies</small></a><button class="menu-toggle" aria-label="Open menu">☰</button><div class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="booking.html" class="active">Booking</a><a href="contact.html">Contact</a></div><a class="nav-cta" href="booking.html">Book Now</a></nav></header>
+  <main>
+    <section class="page-hero"><div class="container reveal"><p class="eyebrow">Booking</p><h1>Choose your day, time, and service.</h1></div></section>
+    <section class="section container booking-layout">
+      <form class="booking-form reveal" action="mailto:cutandtrim@example.com" method="post" enctype="text/plain">
+        <label>Full Name<input type="text" name="name" required></label>
+        <label>Phone Number<input type="tel" name="phone" required></label>
+        <label>Service<select name="service" required><option value="">Select service</option><option>Men Regular Cut - $25</option><option>Men Fade - $30</option><option>Skin Fade - $35</option><option>Ladies Trim - $35</option><option>Ladies Style Cut - $45</option><option>Kids Cut - $20</option><option>Senior Cut - $20</option><option>Beard Trim - $15</option></select></label>
+        <label>Booking Date<input type="date" name="date" required></label>
+        <label>Booking Time<input type="time" name="time" required></label>
+        <label>Notes<textarea name="notes" rows="4" placeholder="Add any notes for your appointment"></textarea></label>
+        <button class="btn primary" type="submit">Send Booking Request</button>
+      </form>
+      <aside class="booking-card reveal delay">
+        <h2>Call to confirm</h2>
+        <p>For the fastest booking confirmation, call the barbershop directly.</p>
+        <a class="phone-large" href="tel:9057969888">905-796-9888</a>
+        <p>105 Kennedy Rd S, Brampton, ON L6W 3G2</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><strong>Cut & Trim Barbershop</strong><p>Men & Ladies</p></div><div><p>105 Kennedy Rd S, Brampton, ON L6W 3G2</p><p><a href="tel:9057969888">905-796-9888</a></p></div></div></footer>
+</body>
+</html>
